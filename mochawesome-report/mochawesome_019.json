@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 1,
+    "failures": -1,
+    "start": "2021-11-22T19:36:15.459Z",
+    "end": "2021-11-22T19:36:20.755Z",
+    "duration": 5296,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "717a7228-9494-4a71-a566-10d4458a2eef",
+      "title": "",
+      "fullFile": "cypress/integration/cadastro.spec.js",
+      "file": "cypress/integration/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aac67207-deff-4c23-9dfb-08cae8f4fb9f",
+          "title": "Cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastro de usuario com credenciais validas",
+              "fullTitle": "Cadastro Cadastro de usuario com credenciais validas",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "767257d9-dc7a-402b-ad23-185e27746026",
+              "parentUUID": "aac67207-deff-4c23-9dfb-08cae8f4fb9f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastro de usuário com credenciais invalidas",
+              "fullTitle": "Cadastro Cadastro de usuário com credenciais invalidas",
+              "timedOut": null,
+              "duration": 5172,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  pathname: '/api/users'\n}, {\n  statusCode: 422,\n  fixture: 'cadastro-invalido'\n}).as('postUsers');\ncy.get('[ng-model$=username]').type('Laura Vieira');\ncy.get('[ng-model$=email]').type('cypress@mail.com');\ncy.get('[ng-model$=password]').type('cypress123');\ncy.contains('button', 'Sign up').click();\ncy.get('.error-messages').should('contain', 'email has already been taken');",
+              "err": {},
+              "uuid": "17538f4b-007e-4d48-b67f-40d44358d102",
+              "parentUUID": "aac67207-deff-4c23-9dfb-08cae8f4fb9f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "17538f4b-007e-4d48-b67f-40d44358d102"
+          ],
+          "failures": [],
+          "pending": [
+            "767257d9-dc7a-402b-ad23-185e27746026"
+          ],
+          "skipped": [],
+          "duration": 5172,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

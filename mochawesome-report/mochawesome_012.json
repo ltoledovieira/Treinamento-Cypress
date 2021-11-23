@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-22T16:59:12.430Z",
+    "end": "2021-11-22T16:59:30.177Z",
+    "duration": 17747,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "45c1c0de-e547-4688-8606-7049799a280d",
+      "title": "",
+      "fullFile": "cypress/integration/comentario.spec.js",
+      "file": "cypress/integration/comentario.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52046749-e690-40f6-b734-dfd607bbf020",
+          "title": "Incluir comentario",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Incluir comentario em artigo",
+              "fullTitle": "Incluir comentario Incluir comentario em artigo",
+              "timedOut": null,
+              "duration": 9957,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const comment = 'Comentario' + new Date().getTime(); //Comentario\ncy.get('textarea[placeholder]').type(comment);\ncy.contains('button', 'Post Comment').click();\ncy.get('p[ng-bind]').should('contain', comment);",
+              "err": {},
+              "uuid": "d277db04-5656-4a5d-a4a5-bf2f4de6b4b5",
+              "parentUUID": "52046749-e690-40f6-b734-dfd607bbf020",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Excluir comentario",
+              "fullTitle": "Incluir comentario Excluir comentario",
+              "timedOut": null,
+              "duration": 7684,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const comment = 'Comentario' + new Date().getTime(); //Comentario\ncy.get('textarea[placeholder]').type(comment);\ncy.contains('button', 'Post Comment').click();\ncy.get('p[ng-bind]').should('contain', comment); //Excluir\ncy.get('.mod-options > .ion-trash-a').click();\ncy.get('p[ng-bind]').not('.visible');",
+              "err": {},
+              "uuid": "b2ae98b4-226f-4f56-8d71-1892f3d5d2f6",
+              "parentUUID": "52046749-e690-40f6-b734-dfd607bbf020",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d277db04-5656-4a5d-a4a5-bf2f4de6b4b5",
+            "b2ae98b4-226f-4f56-8d71-1892f3d5d2f6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17641,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

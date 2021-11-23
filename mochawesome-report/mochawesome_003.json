@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-11-22T13:05:24.093Z",
+    "end": "2021-11-22T13:05:38.681Z",
+    "duration": 14588,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e1d1a2e9-24fd-48f0-a2a3-d723d4dc3ff3",
+      "title": "",
+      "fullFile": "cypress/integration/artigo.spec.js",
+      "file": "cypress/integration/artigo.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b565e110-13c5-40f8-b336-1e54f28b591d",
+          "title": "Artigos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Incluir artigo",
+              "fullTitle": "Artigos Incluir artigo",
+              "timedOut": null,
+              "duration": 14368,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[href*=editor]').click();\nconst articleTitle = 'Exemplo artigo ' + new Date().getTime();\ncy.get('input[ng-model$=title]').type(articleTitle);\ncy.get('input[ng-model$=description]').type(chance.sentence({\n  words: 4\n}));\ncy.get('textarea[ng-model$=body]').type(chance.paragraph({\n  sentences: 1\n}));\ncy.get('input[ng-model$=tagField]').type('Cypress');\ncy.contains('button', 'Publish Article').click();\ncy.get('h1').should('contain', articleTitle);",
+              "err": {
+                "message": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element is not visible:\n\n`<a class=\"nav-link\" ui-sref-active=\"active\" ui-sref=\"app.editor\" href=\"#/editor/\">...</a>`\n\nThis element `<a.nav-link>` is not visible because its parent `<ul.nav.navbar-nav.pull-xs-right>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 10050ms: `cy.click()` failed because this element is not visible:\n\n`<a class=\"nav-link\" ui-sref-active=\"active\" ui-sref=\"app.editor\" href=\"#/editor/\">...</a>`\n\nThis element `<a.nav-link>` is not visible because its parent `<ul.nav.navbar-nav.pull-xs-right>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureVisibility (https://demo.realworld.io/__cypress/runner/cypress_runner.js:160518:85)\n    at runAllChecks (https://demo.realworld.io/__cypress/runner/cypress_runner.js:147840:14)\n    at retryActionability (https://demo.realworld.io/__cypress/runner/cypress_runner.js:147894:16)\n    at tryCatcher (https://demo.realworld.io/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://demo.realworld.io/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://demo.realworld.io/__cypress/runner/cypress_runner.js:165329:61)\n    at whenStable (https://demo.realworld.io/__cypress/runner/cypress_runner.js:165368:14)\n    at https://demo.realworld.io/__cypress/runner/cypress_runner.js:164855:18\n    at tryCatcher (https://demo.realworld.io/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://demo.realworld.io/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://demo.realworld.io/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://demo.realworld.io/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://demo.realworld.io/__cypress/runner/cypress_runner.js:11329:18)\n    at Promise._fulfill (https://demo.realworld.io/__cypress/runner/cypress_runner.js:11273:18)\n    at https://demo.realworld.io/__cypress/runner/cypress_runner.js:12887:46\nFrom Your Spec Code:\n    at Context.eval (https://demo.realworld.io/__cypress/tests?p=cypress/integration/artigo.spec.js:2215:30)",
+                "diff": null
+              },
+              "uuid": "3d4d31a6-c94e-4169-af2d-e7d8e9224224",
+              "parentUUID": "b565e110-13c5-40f8-b336-1e54f28b591d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3d4d31a6-c94e-4169-af2d-e7d8e9224224"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14368,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

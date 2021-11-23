@@ -1,0 +1,71 @@
+[ {
+  "uid" : "1b11300eea7bfbae",
+  "name" : "Cadastro de usuario com credenciais validas",
+  "time" : {
+    "start" : 1637602615248,
+    "stop" : 1637602619150,
+    "duration" : 3902
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4da552cca2895924",
+  "name" : "Incluir comentario em artigo",
+  "time" : {
+    "start" : 1637602625299,
+    "stop" : 1637602634619,
+    "duration" : 9320
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "457c9259f88e5654",
+  "name" : "Login com credenciais invalidas",
+  "time" : {
+    "start" : 1637602649924,
+    "stop" : 1637602652635,
+    "duration" : 2711
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15f5b8f4dbbad304",
+  "name" : "Login com credenciais validas",
+  "time" : {
+    "start" : 1637602645664,
+    "stop" : 1637602649912,
+    "duration" : 4248
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53307d8f13331695",
+  "name" : "Incluir artigo",
+  "time" : {
+    "start" : 1637602601898,
+    "stop" : 1637602612018,
+    "duration" : 10120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bd5f0e0deafb2df",
+  "name" : "Cadastro de usuário com credenciais invalidas",
+  "time" : {
+    "start" : 1637602619181,
+    "stop" : 1637602621908,
+    "duration" : 2727
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c422ab2c1248ebae",
+  "name" : "Excluir comentario",
+  "time" : {
+    "start" : 1637602634634,
+    "stop" : 1637602642598,
+    "duration" : 7964
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

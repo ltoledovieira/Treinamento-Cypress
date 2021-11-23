@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Nov 22 14:37:14 BRT 2021","Mon Nov 22 14:37:22 BRT 2021","7964","","Incluir comentario","","","","Excluir comentario",""
+"passed","Mon Nov 22 14:36:41 BRT 2021","Mon Nov 22 14:36:52 BRT 2021","10120","","Artigos","","","","Incluir artigo",""
+"passed","Mon Nov 22 14:36:59 BRT 2021","Mon Nov 22 14:37:01 BRT 2021","2727","","Cadastro","","","","Cadastro de usuário com credenciais invalidas",""
+"passed","Mon Nov 22 14:37:05 BRT 2021","Mon Nov 22 14:37:14 BRT 2021","9320","","Incluir comentario","","","","Incluir comentario em artigo",""
+"passed","Mon Nov 22 14:37:25 BRT 2021","Mon Nov 22 14:37:29 BRT 2021","4248","","Login","","","","Login com credenciais validas",""
+"passed","Mon Nov 22 14:36:55 BRT 2021","Mon Nov 22 14:36:59 BRT 2021","3902","","Cadastro","","","","Cadastro de usuario com credenciais validas",""
+"passed","Mon Nov 22 14:37:29 BRT 2021","Mon Nov 22 14:37:32 BRT 2021","2711","","Login","","","","Login com credenciais invalidas",""

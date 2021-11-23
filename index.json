@@ -1,0 +1,261 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-21T23:14:40.736Z",
+    "end": "2021-11-21T23:15:14.505Z",
+    "duration": 23769,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b8f7cad9-eb1b-4fd2-bbb7-9c20bd1fa6ca",
+      "title": "",
+      "fullFile": "cypress/integration/cadastro.spec.js",
+      "file": "cypress/integration/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "636104c1-0562-4b2d-a45a-618d68fbf505",
+          "title": "Cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastro de usuario com credenciais validas",
+              "fullTitle": "Cadastro Cadastro de usuario com credenciais validas",
+              "timedOut": null,
+              "duration": 3908,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  pathname: '/api/users'\n}, {\n  statusCode: 200,\n  fixture: 'cadastro-sucesso'\n}).as('postUsers');\ncy.get('[ng-model$=username]').type('Laura Vieira');\ncy.get('[ng-model$=email]').type('cypress@mail.com');\ncy.get('[ng-model$=password]').type('cypress123');\ncy.contains('button', 'Sign up').click();\ncy.wait('@postUsers');",
+              "err": {},
+              "uuid": "874b9b23-2172-4322-ae4c-b8ff4843ec1a",
+              "parentUUID": "636104c1-0562-4b2d-a45a-618d68fbf505",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastro de usuário com credenciais invalidas",
+              "fullTitle": "Cadastro Cadastro de usuário com credenciais invalidas",
+              "timedOut": null,
+              "duration": 2753,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  pathname: '/api/users'\n}, {\n  statusCode: 422,\n  fixture: 'cadastro-invalido'\n}).as('postUsers');\ncy.get('[ng-model$=username]').type('Laura Vieira');\ncy.get('[ng-model$=email]').type('cypress@mail.com');\ncy.get('[ng-model$=password]').type('cypress123');\ncy.contains('button', 'Sign up').click();\ncy.get('.error-messages').should('contain', 'email has already been taken');",
+              "err": {},
+              "uuid": "7775b7ab-b823-4268-8650-651d89308dc7",
+              "parentUUID": "636104c1-0562-4b2d-a45a-618d68fbf505",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "874b9b23-2172-4322-ae4c-b8ff4843ec1a",
+            "7775b7ab-b823-4268-8650-651d89308dc7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6661,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "709b5c1c-4ea8-4ab2-a790-d3f946de6b2b",
+      "title": "",
+      "fullFile": "cypress/integration/login.spec.js",
+      "file": "cypress/integration/login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d0dd865-43e3-40ef-aaa5-f521f451dafb",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login com credenciais validas",
+              "fullTitle": "Login Login com credenciais validas",
+              "timedOut": null,
+              "duration": 4218,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[type=email]').type('cypress@mail.com');\ncy.get('input[type=password]').type('cypress123');\ncy.contains('button', 'Sign in').click();\ncy.get('[href*=editor]').should('be.visible');",
+              "err": {},
+              "uuid": "9128a904-d18f-4911-97da-9c17dd6dce4e",
+              "parentUUID": "0d0dd865-43e3-40ef-aaa5-f521f451dafb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login com credenciais invalidas",
+              "fullTitle": "Login Login com credenciais invalidas",
+              "timedOut": null,
+              "duration": 2618,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[type=email]').type('cypress@mail.com');\ncy.get('input[type=password]').type('cypress');\ncy.contains('button', 'Sign in').click();\ncy.get('li[ng-repeat$=errors]').should('be.visible').and('contains.text', 'email or password is invalid');",
+              "err": {},
+              "uuid": "ec245380-8692-48fe-978f-1b1c42e225e2",
+              "parentUUID": "0d0dd865-43e3-40ef-aaa5-f521f451dafb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9128a904-d18f-4911-97da-9c17dd6dce4e",
+            "ec245380-8692-48fe-978f-1b1c42e225e2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6836,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "dd83bf90-d8b3-45c1-9ff3-c520d981f1e8",
+      "title": "",
+      "fullFile": "cypress/integration/artigo.spec.js",
+      "file": "cypress/integration/artigo.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ca688096-bd3b-4877-bbf8-877d983e211f",
+          "title": "Artigos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Incluir artigo",
+              "fullTitle": "Artigos Incluir artigo",
+              "timedOut": null,
+              "duration": 10272,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[href*=editor]').click();\nconst articleTitle = 'Exemplo artigo ' + new Date().getTime();\ncy.get('input[ng-model$=title]').type(articleTitle);\ncy.get('input[ng-model$=description]').type(chance.sentence({\n  words: 4\n}));\ncy.get('textarea[ng-model$=body]').type(chance.paragraph({\n  sentences: 1\n}));\ncy.get('input[ng-model$=tagField]').type('Cypress');\ncy.contains('button', 'Publish Article').click();\ncy.get('h1').should('contain', articleTitle);",
+              "err": {},
+              "uuid": "ad7da6ce-76b4-450d-948f-815de611dcc7",
+              "parentUUID": "ca688096-bd3b-4877-bbf8-877d983e211f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ad7da6ce-76b4-450d-948f-815de611dcc7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10272,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

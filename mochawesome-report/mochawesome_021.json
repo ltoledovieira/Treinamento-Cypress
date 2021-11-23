@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 1,
+    "failures": -1,
+    "start": "2021-11-22T19:36:30.596Z",
+    "end": "2021-11-22T19:36:35.659Z",
+    "duration": 5063,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "46ec5243-37ca-4b44-84fa-e22a1f2ee93c",
+      "title": "",
+      "fullFile": "cypress/integration/login.spec.js",
+      "file": "cypress/integration/login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9b38b03f-578d-486d-b099-26227b90fbed",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login com credenciais validas",
+              "fullTitle": "Login Login com credenciais validas",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "72a0bfd3-55a9-4e72-9f84-09d0b45e7073",
+              "parentUUID": "9b38b03f-578d-486d-b099-26227b90fbed",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login com credenciais invalidas",
+              "fullTitle": "Login Login com credenciais invalidas",
+              "timedOut": null,
+              "duration": 4992,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[type=email]').type('cypress@mail.com');\ncy.get('input[type=password]').type('cypress');\ncy.contains('button', 'Sign in').click();\ncy.get('li[ng-repeat$=errors]').should('be.visible').and('contains.text', 'email or password is invalid');",
+              "err": {},
+              "uuid": "5e6a9457-3e45-45b4-bd31-2a446bc984a1",
+              "parentUUID": "9b38b03f-578d-486d-b099-26227b90fbed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5e6a9457-3e45-45b4-bd31-2a446bc984a1"
+          ],
+          "failures": [],
+          "pending": [
+            "72a0bfd3-55a9-4e72-9f84-09d0b45e7073"
+          ],
+          "skipped": [],
+          "duration": 4992,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

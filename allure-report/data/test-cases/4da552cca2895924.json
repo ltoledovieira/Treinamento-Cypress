@@ -1,0 +1,675 @@
+{
+  "uid" : "4da552cca2895924",
+  "name" : "Incluir comentario em artigo",
+  "fullName" : "Incluir comentario em artigo",
+  "historyId" : "140c76b8b0f6ec0d6ad7da863ac4b2cd",
+  "time" : {
+    "start" : 1637602625299,
+    "stop" : 1637602634619,
+    "duration" : 9320
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1637602625302,
+        "stop" : 1637602633351,
+        "duration" : 8049
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "login",
+        "time" : {
+          "start" : 1637602625334
+        },
+        "status" : "unknown",
+        "steps" : [ {
+          "name" : "POST 200 https://api.realworld.io/api/users/login",
+          "time" : {
+            "start" : 1637602625340,
+            "stop" : 1637602625863,
+            "duration" : 523
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "log eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImN5cHJlc3NAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkxhdXJhIFZpZWlyYSIsInBhc3N3b3JkIjoiJDJhJDEwJENuUlI2dFguZS5pWXIweC50ejVRdS5QUjFGZ0RFdkZvSVFHZmwuOGVvZS9tc2YybVQxLzVxIiwiYmlvIjpudWxsLCJpbWFnZSI6Imh0dHBzOi8vYXBpLnJlYWx3b3JsZC5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2Mzc2MDI2MjUsImV4cCI6MTY0Mjc4NjYyNX0.rVASD-MbZYFhGwLrYDej5D9iUv058nhgBYpChDz00Gw",
+          "time" : {
+            "start" : 1637602625866,
+            "stop" : 1637602625871,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "visit /",
+        "time" : {
+          "start" : 1637602625871,
+          "stop" : 1637602627969,
+          "duration" : 2098
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET https://conduit.productionready.io/api/user",
+        "time" : {
+          "start" : 1637602627969,
+          "stop" : 1637602627969,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "artigo",
+        "time" : {
+          "start" : 1637602627969
+        },
+        "status" : "unknown",
+        "steps" : [ {
+          "name" : "get [href*=editor]",
+          "time" : {
+            "start" : 1637602627972,
+            "stop" : 1637602628881,
+            "duration" : 909
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "GET https://api.realworld.io/api/user",
+          "time" : {
+            "start" : 1637602628881,
+            "stop" : 1637602628881,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "GET https://conduit.productionready.io/api/tags",
+          "time" : {
+            "start" : 1637602628881,
+            "stop" : 1637602628881,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "GET https://conduit.productionready.io/api/articles/feed?limit=10&offset=0",
+          "time" : {
+            "start" : 1637602628881,
+            "stop" : 1637602628881,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "click",
+          "time" : {
+            "start" : 1637602628881,
+            "stop" : 1637602629076,
+            "duration" : 195
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "new url https://demo.realworld.io/#/editor/",
+          "time" : {
+            "start" : 1637602629075,
+            "stop" : 1637602629075,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "get input[ng-model$=title]",
+          "time" : {
+            "start" : 1637602629076,
+            "stop" : 1637602629086,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "type Exemplo artigo 1637602627969",
+          "time" : {
+            "start" : 1637602629086,
+            "stop" : 1637602629657,
+            "duration" : 571
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "GET https://api.realworld.io/api/tags",
+          "time" : {
+            "start" : 1637602629657,
+            "stop" : 1637602629657,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "GET https://api.realworld.io/api/articles/feed?limit=10&offset=0",
+          "time" : {
+            "start" : 1637602629657,
+            "stop" : 1637602629657,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "get input[ng-model$=description]",
+          "time" : {
+            "start" : 1637602629657,
+            "stop" : 1637602629670,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "type Cupcuhwan veemarup ij mobvowet.",
+          "time" : {
+            "start" : 1637602629670,
+            "stop" : 1637602630305,
+            "duration" : 635
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "get textarea[ng-model$=body]",
+          "time" : {
+            "start" : 1637602630305,
+            "stop" : 1637602630314,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "type Oksik vejpem vero fiwuco rehmib ez ikavut zebhun weg az noruc du iri za.",
+          "time" : {
+            "start" : 1637602630314,
+            "stop" : 1637602631395,
+            "duration" : 1081
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "get input[ng-model$=tagField]",
+          "time" : {
+            "start" : 1637602631395,
+            "stop" : 1637602631405,
+            "duration" : 10
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "type Cypress",
+          "time" : {
+            "start" : 1637602631405,
+            "stop" : 1637602631624,
+            "duration" : 219
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "contains button, Publish Article",
+          "time" : {
+            "start" : 1637602631624,
+            "stop" : 1637602631661,
+            "duration" : 37
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "click",
+          "time" : {
+            "start" : 1637602631661,
+            "stop" : 1637602631791,
+            "duration" : 130
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "POST https://conduit.productionready.io/api/articles",
+          "time" : {
+            "start" : 1637602631791,
+            "stop" : 1637602631791,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "get h1",
+          "time" : {
+            "start" : 1637602631791,
+            "stop" : 1637602633350,
+            "duration" : 1559
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "POST https://api.realworld.io/api/articles",
+          "time" : {
+            "start" : 1637602633350,
+            "stop" : 1637602633350,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "GET https://conduit.productionready.io/api/articles/Exemplo-artigo-1637602627969-717",
+          "time" : {
+            "start" : 1637602633350,
+            "stop" : 1637602633350,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "GET https://api.realworld.io/api/articles/Exemplo-artigo-1637602627969-717",
+          "time" : {
+            "start" : 1637602633350,
+            "stop" : 1637602633350,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "GET https://conduit.productionready.io/api/articles/Exemplo-artigo-1637602627969-717/comments",
+          "time" : {
+            "start" : 1637602633350,
+            "stop" : 1637602633350,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "new url https://demo.realworld.io/#/article/Exemplo-artigo-1637602627969-717",
+          "time" : {
+            "start" : 1637602633350,
+            "stop" : 1637602633350,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "assert expected **<h1.ng-binding>** to contain **Exemplo artigo 1637602627969**",
+          "time" : {
+            "start" : 1637602633350,
+            "stop" : 1637602633350,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "hasContent" : false,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 26,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 32,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get textarea[placeholder]",
+      "time" : {
+        "start" : 1637602633354,
+        "stop" : 1637602633375,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "type Comentario1637602633352",
+      "time" : {
+        "start" : 1637602633375,
+        "stop" : 1637602633796,
+        "duration" : 421
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET https://api.realworld.io/api/articles/Exemplo-artigo-1637602627969-717/comments",
+      "time" : {
+        "start" : 1637602633796,
+        "stop" : 1637602633796,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "contains button, Post Comment",
+      "time" : {
+        "start" : 1637602633796,
+        "stop" : 1637602633803,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1637602633803,
+        "stop" : 1637602633901,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST https://conduit.productionready.io/api/articles/Exemplo-artigo-1637602627969-717/comments",
+      "time" : {
+        "start" : 1637602633901,
+        "stop" : 1637602633901,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get p[ng-bind]",
+      "time" : {
+        "start" : 1637602633901,
+        "stop" : 1637602634616,
+        "duration" : 715
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST https://api.realworld.io/api/articles/Exemplo-artigo-1637602627969-717/comments",
+      "time" : {
+        "start" : 1637602634616,
+        "stop" : 1637602634616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **<p.card-text.ng-binding>** to contain **Comentario1637602633352**",
+      "time" : {
+        "start" : 1637602634616,
+        "stop" : 1637602634616,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 42,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Incluir comentario"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4da552cca2895924.json",
+  "parameterValues" : [ ]
+}

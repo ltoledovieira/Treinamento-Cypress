@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-22T16:58:43.941Z",
+    "end": "2021-11-22T16:58:54.163Z",
+    "duration": 10222,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c893a5d9-ced2-46a9-9af1-428a73a48931",
+      "title": "",
+      "fullFile": "cypress/integration/artigo.spec.js",
+      "file": "cypress/integration/artigo.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "681fac40-7a57-4531-acb4-9088e0b369c6",
+          "title": "Artigos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Incluir artigo",
+              "fullTitle": "Artigos Incluir artigo",
+              "timedOut": null,
+              "duration": 10117,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[href*=editor]').click();\nconst articleTitle = 'Exemplo artigo ' + new Date().getTime();\ncy.get('input[ng-model$=title]').type(articleTitle);\ncy.get('input[ng-model$=description]').type(chance.sentence({\n  words: 4\n}));\ncy.get('textarea[ng-model$=body]').type(chance.paragraph({\n  sentences: 1\n}));\ncy.get('input[ng-model$=tagField]').type('Cypress');\ncy.contains('button', 'Publish Article').click();\ncy.get('h1').should('contain', articleTitle);",
+              "err": {},
+              "uuid": "67d7b7d5-3bcd-4505-be9c-2d782030c7ba",
+              "parentUUID": "681fac40-7a57-4531-acb4-9088e0b369c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "67d7b7d5-3bcd-4505-be9c-2d782030c7ba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10117,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

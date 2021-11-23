@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-22T17:36:55.241Z",
+    "end": "2021-11-22T17:37:01.942Z",
+    "duration": 6701,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "83cce5c9-db7c-49bb-942d-3e4e91419537",
+      "title": "",
+      "fullFile": "cypress/integration/cadastro.spec.js",
+      "file": "cypress/integration/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b2735e26-e8dc-4d9c-8e68-d4ae94ee0d1d",
+          "title": "Cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cadastro de usuario com credenciais validas",
+              "fullTitle": "Cadastro Cadastro de usuario com credenciais validas",
+              "timedOut": null,
+              "duration": 3897,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  pathname: '/api/users'\n}, {\n  statusCode: 200,\n  fixture: 'cadastro-sucesso'\n}).as('postUsers');\ncy.get('[ng-model$=username]').type('Laura Vieira');\ncy.get('[ng-model$=email]').type('cypress@mail.com');\ncy.get('[ng-model$=password]').type('cypress123');\ncy.contains('button', 'Sign up').click();\ncy.wait('@postUsers');",
+              "err": {},
+              "uuid": "2cac5823-5994-488c-a376-bbbcf3118e76",
+              "parentUUID": "b2735e26-e8dc-4d9c-8e68-d4ae94ee0d1d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cadastro de usuário com credenciais invalidas",
+              "fullTitle": "Cadastro Cadastro de usuário com credenciais invalidas",
+              "timedOut": null,
+              "duration": 2726,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  pathname: '/api/users'\n}, {\n  statusCode: 422,\n  fixture: 'cadastro-invalido'\n}).as('postUsers');\ncy.get('[ng-model$=username]').type('Laura Vieira');\ncy.get('[ng-model$=email]').type('cypress@mail.com');\ncy.get('[ng-model$=password]').type('cypress123');\ncy.contains('button', 'Sign up').click();\ncy.get('.error-messages').should('contain', 'email has already been taken');",
+              "err": {},
+              "uuid": "2f370dea-df4b-4b77-bc9b-545188bac241",
+              "parentUUID": "b2735e26-e8dc-4d9c-8e68-d4ae94ee0d1d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2cac5823-5994-488c-a376-bbbcf3118e76",
+            "2f370dea-df4b-4b77-bc9b-545188bac241"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6623,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

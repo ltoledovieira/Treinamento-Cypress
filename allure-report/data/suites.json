@@ -1,0 +1,140 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Artigos",
+    "children" : [ {
+      "name" : "Incluir artigo",
+      "uid" : "53307d8f13331695",
+      "parentUid" : "2c1ee57f1ad67a979ae9bd97d22c7644",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637602601898,
+        "stop" : 1637602612018,
+        "duration" : 10120
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2c1ee57f1ad67a979ae9bd97d22c7644"
+  }, {
+    "name" : "Cadastro",
+    "children" : [ {
+      "name" : "Cadastro de usuario com credenciais validas",
+      "uid" : "1b11300eea7bfbae",
+      "parentUid" : "de2ab1b6520747037939cd4a650da7de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637602615248,
+        "stop" : 1637602619150,
+        "duration" : 3902
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Cadastro de usuário com credenciais invalidas",
+      "uid" : "5bd5f0e0deafb2df",
+      "parentUid" : "de2ab1b6520747037939cd4a650da7de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637602619181,
+        "stop" : 1637602621908,
+        "duration" : 2727
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "de2ab1b6520747037939cd4a650da7de"
+  }, {
+    "name" : "Incluir comentario",
+    "children" : [ {
+      "name" : "Incluir comentario em artigo",
+      "uid" : "4da552cca2895924",
+      "parentUid" : "cd88733ae113b700650e3fe122743e86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637602625299,
+        "stop" : 1637602634619,
+        "duration" : 9320
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Excluir comentario",
+      "uid" : "c422ab2c1248ebae",
+      "parentUid" : "cd88733ae113b700650e3fe122743e86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637602634634,
+        "stop" : 1637602642598,
+        "duration" : 7964
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cd88733ae113b700650e3fe122743e86"
+  }, {
+    "name" : "Login",
+    "children" : [ {
+      "name" : "Login com credenciais validas",
+      "uid" : "15f5b8f4dbbad304",
+      "parentUid" : "1a85855463aca3ea10b8fe0fcb3372b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637602645664,
+        "stop" : 1637602649912,
+        "duration" : 4248
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Login com credenciais invalidas",
+      "uid" : "457c9259f88e5654",
+      "parentUid" : "1a85855463aca3ea10b8fe0fcb3372b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1637602649924,
+        "stop" : 1637602652635,
+        "duration" : 2711
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1a85855463aca3ea10b8fe0fcb3372b8"
+  } ]
+}
